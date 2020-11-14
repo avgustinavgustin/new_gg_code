@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GG</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+<main>
+    <section class="bo-kameleoon padding">
+        <div class="module__items__code_deleted" style="display: none;" id="deleted_openend">
+            <div class="real_deleted">
+                <p id="real_deleted">Do you want to delete a module </p>
+                <div class="deleted_vibor">
+                    <div class="deleted_vibor_bnt">Yes</div>
+                    <div class="deleted_vibor_bnt">No</div>
+                </div>
+            </div>
+        </div>
+        <h2>BO-Kameleoon</h2>
+        <p class="bo-kameleoon__body-title">Global custom script</p>
+        <ul class="bo-kameleoon__structure-settings" id="bo_structure_set">
+            <li class="kkks">Modul</li>
+            <li class="bo-kameleoon__structure-settings_active kkks">All</li>
+        </ul>
+        <div class="bo-kameleoon__code-main" id="bo_code_all" style="display: none;"></div>
+        <div class="bo-kameleoon__code__modul" style="display: none;">
+            <div id="modul_search">
+                <svg class="input__icon--95c28d0b" viewBox="0 0 20 20"><path d="M19.317,18.198l-4.737-4.926c1.218-1.449,1.886-3.271,1.886-5.168c0-4.431-3.605-8.037-8.039-8.037c-4.431,0-8.036,3.605-8.036,8.037c0,4.433,3.605,8.038,8.036,8.038c1.664,0,3.251-0.501,4.605-1.455l4.774,4.965c0.2,0.208,0.467,0.322,0.756,0.322c0.271,0,0.529-0.104,0.725-0.293C19.706,19.28,19.718,18.616,19.317,18.198L19.317,18.198zM8.427,2.164c3.276,0,5.942,2.665,5.942,5.94c0,3.276-2.665,5.941-5.942,5.941c-3.274,0-5.939-2.665-5.939-5.941C2.488,4.83,5.153,2.164,8.427,2.164L8.427,2.164z"></path></svg>
+                <input type="text" class="bo-kameleoon__code__modul__search" id="input_search_modul">
+            </div>
+            <div id="module_items"></div>
+        </div>
+    </section>
+    <section class="git-kameleoon">
+        <div class="padding">
+            <h2>GitLab structure</h2>
+            <ul class="git-kameleoon__structure">
+                <li class="gk-1"><span class="rotate90">></span> customerId-Big_Customer_Name</li>
+                <li class="gk-2"><span class="rotate90">></span> sitecode-domain.com</li>
+                <li class="gk-3">> experiments</li>
+                <li class="gk-3"><span class="rotate90">></span> global</li>
+                <div id="git_files">
+                    <li class="gk-js gk-js__active">module1.js</li>
+                    <li class="gk-js">module2.js</li>
+                    <li class="gk-js">module3.js</li>
+                    <li class="gk-js">module4.js</li>
+                </div>
+            </ul>
+            <div class="git-kameleoon__structure__input">
+                <input type="text" id="git_name_file" class="git_input">
+                <div class="git_input__js">.js</div>
+            </div>
+            <div id="git_add_file" class="git_button">Новый файл</div>
+        </div>
+        <div class="git-kameleoon__edit-code">
+            <div class="git-kameleoon__edit-code__header">
+                <div class="gk-js" id="git_file_name">module.js</div>
+            </div>
+            <textarea class="git-kameleoon__edit-code__value" id="git_code_script"></textarea>
+        </div>
+    </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
