@@ -73,7 +73,7 @@ function BO_Kameleoon(){
 
     Array.from(git_files.children).forEach(element => {
         bo_code_all.innerHTML += '<div class="bo-kameleoon__code-main__desc">//'+element.innerText+'</div>';
-        bo_code_all.innerHTML += '<div>'+text_files[element.innerText].split('\n').join('<br>')+'</div>';
+        bo_code_all.innerHTML += '<div style="padding-left: 15px;"><p style="margin-left: -15px;">(function () {</p>'+text_files[element.innerText].split('\n').join('<br>')+'<p style="margin-left: -15px;">}());<p></div>';
 
         module_items.innerHTML += '<div class="module__items"><div class="module__items__title"><div class="module__items__title__name">'+element.innerText+'</div><div class="choice__mains"><div class="choice__items">Copy</div><div class="choice__items">Deleted</div></div></div><div class="module__items__code" style="display:none">'+text_files[element.innerText].split('\n').join('<br>')+'</div>'
     });  
